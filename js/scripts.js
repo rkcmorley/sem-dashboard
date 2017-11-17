@@ -10,7 +10,10 @@ Highcharts.chart('container', {
     },
     exporting: { 
         enabled: false 
-    },    
+    },  
+  credits: {
+      enabled: false
+  },      
     subtitle: {
         text: false,
     },
@@ -21,26 +24,26 @@ Highcharts.chart('container', {
     }],
     yAxis: [{ // Primary yAxis
         labels: {
-            format: '{value}°C',
+            format: '$ {value}',
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
         },
         title: {
-            text: 'Temperature',
+            text: false,
             style: {
                 color: Highcharts.getOptions().colors[1]
             }
         }
     }, { // Secondary yAxis
         title: {
-            text: 'Rainfall',
+            text: false,
             style: {
                 color: Highcharts.getOptions().colors[0]
             }
         },
         labels: {
-            format: '{value} mm',
+            format: '$ {value} ',
             style: {
                 color: Highcharts.getOptions().colors[0]
             }
@@ -51,29 +54,29 @@ Highcharts.chart('container', {
         shared: true
     },
     legend: {
-        layout: 'vertical',
-        align: 'left',
-        x: 120,
-        verticalAlign: 'top',
-        y: 100,
+     enabled: true,
+     floating: true,
+             align: "center",
+     verticalAlign: 'bottom',
+       y:20,
         floating: true,
         backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
     },
     series: [{
-        name: 'Rainfall',
+        name: 'Spend 2017',
         type: 'column',
         yAxis: 1,
         data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
         tooltip: {
-            valueSuffix: ' mm'
+            valueSuffix: ' $'
         }
 
     }, {
-        name: 'Temperature',
+        name: 'Revenue 2017',
         type: 'spline',
         data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
         tooltip: {
-            valueSuffix: '°C'
+            valueSuffix: '$'
         }
     }]
 });
@@ -89,6 +92,9 @@ Highcharts.chart('funnel-graph', {
     exporting: { 
         enabled: false 
     },
+  credits: {
+      enabled: false
+  },    
     plotOptions: {
         series: {
             dataLabels: {
@@ -109,10 +115,10 @@ Highcharts.chart('funnel-graph', {
     series: [{
         name: 'Unique users',
         data: [
-            ['Website visits', 15654],
-            ['Downloads', 4064],
-            ['Requested price list', 1987],
-            ['Invoice sent', 976],
+            ['Impressions', 15654],
+            ['Clicks', 4064],
+            ['Visits', 1987],
+            ['Orders', 976],
         ]
     }]
 });
@@ -130,7 +136,9 @@ var chart = Highcharts.chart('monthly-trend-container-1', {
     exporting: { 
         enabled: false 
     },        
-
+  credits: {
+      enabled: false
+  },
     xAxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     },
@@ -156,7 +164,9 @@ var chart = Highcharts.chart('monthly-trend-container-2', {
     exporting: { 
         enabled: false 
     },    
-
+  credits: {
+      enabled: false
+  },
     xAxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     },
@@ -175,7 +185,9 @@ var chart = Highcharts.chart('monthly-trend-container-3', {
     title: {
         text: false,
     },
-
+  credits: {
+      enabled: false
+  },
     subtitle: {
         text: false,
     },
@@ -208,7 +220,9 @@ var chart = Highcharts.chart('monthly-trend-container-4', {
     exporting: { 
         enabled: false 
     },        
-
+  credits: {
+      enabled: false
+  },
     xAxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     },
@@ -234,7 +248,9 @@ var chart = Highcharts.chart('monthly-trend-container-5', {
     exporting: { 
         enabled: false 
     },        
-
+  credits: {
+      enabled: false
+  },
     xAxis: {
         categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     },
