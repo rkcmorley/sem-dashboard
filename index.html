@@ -1,163 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>SEM Dashboard</title>
-	<meta content="SEM Dashboard" name="SEM Dashboard">
-	<meta content="SEM Dashboard" name="author">
-	<link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	<!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <title>SEM Dashboard</title>
+    <meta content="SEM Dashboard" name="SEM Dashboard">
+    <meta content="SEM Dashboard" name="author">
+    <link href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-<body>
-	<div class="wrapper">
-		<header class="overall-dashboard-header">
-			<div class="overall-dashboard-title">
-				<h1 class="overall-dashboard-title">SEM Dashboard</h1>
-			</div>
 
-			<button class="globe">
+<body>
+    <div class="wrapper">
+        <header class="overall-dashboard-header">
+            <div class="overall-dashboard-title">
+                <h1 class="overall-dashboard-title">SEM Dashboard</h1>
+            </div>
+            <button class="globe">
 				<span class="button-content">
 			<span class="fa fa-globe"></span> <span>All</span>
 				</span>
 			</button>
-			<button class="calendar">
+            <button class="calendar">
 			<i class="fa fa-calendar" aria-hidden="true"></i> <span>May</span>
 			</button>
-		</header>
-		<div class="overall-numerical-column">
-			<div class="column-header">
-<i class="fa fa-balance-scale" aria-hidden="true"></i>
-				<span>ROI</span>
-			</div>
-			<div class="column-subheader">
-				<h3>Year to date</h3>
-			</div>
-			<div class="numerical-result-container">
-				<div class="numerical-result">
-					<span>0%</span>
-				</div>
-				<div class="comparison-container">
-					<div class="left-comparison-container">
-						<p>0% vs 2016</p>
-					</div>
-					<div class="right-comparison-container">
-						<p>0% vs Target</p>
-					</div>
-				</div><!-- End of Comparison Container -->			
-				<div class="month-container">
-				<div class="column-subheader">
-					<h3>Month</h3>
-				</div>
-				<div class="numerical-result">
-					<span>0%</span>
-				</div>
-				<div class="comparison-container">
-					<div class="left-comparison-container">
-						<p>0% vs 2016</p>
-					</div>
-					<div class="right-comparison-container">
-						<p>0% vs Target</p>
-					</div>
-				</div><!-- End of Comparison Container -->
-			</div><!-- End of Month Container -->
-			</div><!-- End of Numerical Result Container -->
-		</div><!-- End of Overall Numerical Column -->
+        </header>
+        <section class="first-section">
+            <div class="overall-numerical-column first-numerical-column">
+                <div class="column-header">
+                    <i class="fa fa-balance-scale" aria-hidden="true"></i>
+                    <span>ROI</span>
+                </div>
+                <div class="column-subheader">
+                    <h3>Year to date</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div class="numerical-result">
+                            <span class="positive">187%</span>
+                        </div>
+                        <div class="comparison-container">
+                            <div class="left-comparison-container">
+                                <p>-1% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="right-comparison-container">
+                                <p>-5% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                        <!-- End of Comparison Container -->
+                    </div>
+                    <!-- End of Numerical Result Container -->
+                </div>
+                <!-- End of Year Container -->
+                <div class="column-subheader">
+                    <h3>Month</h3>
+                </div>
+                <div class="month-container">
+                    <div class="numerical-result">
+                        <span class="positive">220%</span>
+                    </div>
+                    <div class="comparison-container">
+                        <div class="left-comparison-container">
+                            <p>16% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="right-comparison-container">
+                            <p>10% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <!-- End of Month Container -->
+            </div>
+            <!-- End of Numerical Result Container -->
 
-		<div class="overall-numerical-column middle-column">
-			<div class="column-header">
-			<i aria-hidden="true" class="fa fa-money"></i>
-				<span>Spend</span>
-			</div>
-			<div class="column-subheader">
-				<h3>Year to date</h3>
-			</div>
-			<div class="numerical-result-container">
-				<div class="numerical-result">
-					<span>US $ 131, 486</span>
-				</div>
-								<div class="comparison-container">
-					<div class="left-comparison-container">
-						<p>0% vs 2016</p>
-					</div>
-					<div class="right-comparison-container">
-						<p>0% vs Target</p>
-					</div>
-				</div><!-- End of Comparison Container -->
-								<div class="month-container">
-				<div class="column-subheader">
-					<h3>Month</h3>
-				</div>
-				<div class="numerical-result">
-					<span>US $ 19, 276</span>
-				</div>
-				<div class="comparison-container">
-					<div class="left-comparison-container">
-						<p>0% vs 2016</p>
-					</div>
-					<div class="right-comparison-container">
-						<p>0% vs Target</p>
-					</div>
-				</div><!-- End of Comparison Container -->
-			</div><!-- End of Month Container -->
-			</div><!-- End of Numerical Result Container -->
-		</div><!-- End of Overall Numerical Column -->
-		<div class="overall-numerical-column">
-			<div class="column-header">
-	<i aria-hidden="true" class="fa fa-usd"></i>
-				<span>Revenue</span>
-			</div>
-			<div class="column-subheader">
-				<h3>Year to date</h3>
-			</div>
-			<div class="numerical-result-container">
-				<div class="numerical-result">
-					<span>US $ -</span>
-				</div>
-				<div class="comparison-container">
-					<div class="left-comparison-container">
-						<p>0% vs 2016</p>
-					</div>
-					<div class="right-comparison-container">
-						<p>0% vs Target</p>
-					</div>
-				</div><!-- End of Comparison Container -->				
-				<div class="month-container">
-				<div class="column-subheader">
-					<h3>Month</h3>
-				</div>
-				<div class="numerical-result">
-					<span>US $ -</span>
-				</div>
-				<div class="comparison-container">
-					<div class="left-comparison-container">
-						<p>0% vs 2016</p>
-					</div>
-					<div class="right-comparison-container">
-						<p>0% vs Target</p>
-					</div>
-				</div><!-- End of Comparison Container -->
-			</div><!-- End of Month Container -->				
-			</div><!-- End of Numerical Result Container -->
-		</div><!-- End of Overall Numerical Column -->
-		<div class="overall-graph-column">
-			<div class="graph-column-header">
-				<i aria-hidden="true" class="fa fa-bar-chart"></i>
-				<span>Trend</span>
-			</div>
-			<div class="graph-result-container">
-<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-			</div><!-- End of Graph Result Container -->
-		</div><!-- End of Overall Graph Column -->
-		</section>
-	</div><!-- End of Wrapper -->
-<script src="https://code.highcharts.com/highcharts.js"></script>
-<script src="https://code.highcharts.com/modules/series-label.js"></script>
-<script src="https://code.highcharts.com/modules/exporting.js"></script>
-	<script src="js/scripts.js">
-	</script>
+            <div class="overall-numerical-column">
+                <div class="column-header">
+                    <i aria-hidden="true" class="fa fa-money"></i>
+                    <span>Spend</span>
+                </div>
+                <div class="column-subheader">
+                    <h3>Year to date</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div class="numerical-result">
+                            <span class="negative">US $ 131,486</span>
+                        </div>
+                        <div class="comparison-container">
+                            <div class="left-comparison-container">
+                                <p>9% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="right-comparison-container">
+                                <p>-51% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                        <!-- End of Comparison Container -->
+                    </div>
+                    <!-- End of Numerical Result Container -->
+                </div>
+                <!-- End of Year Container -->
+                <div class="column-subheader">
+                    <h3>Month</h3>
+                </div>
+                <div class="month-container">
+                    <div class="numerical-result">
+                        <span class="negative">US $ 19,276</span>
+                    </div>
+                    <div class="comparison-container">
+                        <div class="left-comparison-container">
+                            <p>-10% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="right-comparison-container">
+                            <p>-64% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <!-- End of Month Container -->
+            </div>
+            <!-- End of Numerical Result Container -->
+            <div class="overall-numerical-column last-numerical-column">
+                <div class="column-header">
+                    <i aria-hidden="true" class="fa fa-usd"></i>
+                    <span>Revenue</span>
+                </div>
+                <div class="column-subheader">
+                    <h3>Year to date</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div class="numerical-result">
+                            <span class="positive">$377,326</span>
+                        </div>
+                        <div class="comparison-container">
+                            <div class="left-comparison-container">
+                                <p>9% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+                            </div>
+                            <div class="right-comparison-container">
+                                <p>-35% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+                            </div>
+                        </div>
+                        <!-- End of Comparison Container -->
+                    </div>
+                    <!-- End of Numerical Result Container -->
+                </div>
+                <!-- End of Year Container -->
+                <div class="column-subheader">
+                    <h3>Month</h3>
+                </div>
+                <div class="month-container">
+                    <div class="numerical-result">
+                        <span class="negative">$61,632</span>
+                    </div>
+                    <div class="comparison-container">
+                        <div class="left-comparison-container">
+                            <p>-1% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+                        </div>
+                        <div class="right-comparison-container">
+                            <p>-47% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+                        </div>
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <!-- End of Month Container -->
+            </div>
+            <!-- End of Overall Numerical Column -->
+        </section>
+        <section class="second-section">
+            <div class="overall-graph-column">
+                <div class="graph-column-header">
+                    <i aria-hidden="true" class="fa fa-bar-chart"></i>
+                    <span>Trend</span>
+                </div>
+                <div class="graph-result-container">
+                    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+                </div>
+                <!-- End of Graph Result Container -->
+            </div>
+            <!-- End of Overall Graph Column -->
+        </section>
+
+        <section class="third-section">
+            <div class="overall-analysis-column">
+                <div class="column-header analysis">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <span>Analysis</span>
+                </div>
+                <div class="analysis-content">
+                    <div class="analysis-content-container">
+                        <span class="analysis-header">Insight</span>
+                        <ul>
+                            <li class="analysis-list">This was an amazing week due to great sales and low CPC</li>
+                        </ul>
+                    </div>
+                    <div class="analysis-content-container middle">
+                        <span class="analysis-header">Recommended Actions</span>
+                        <ul>
+                            <li class="analysis-list">Suggest that we do x in order to drive B</li>
+                        </ul>
+                    </div>
+                    <div class="analysis-content-container last">
+                        <span class="analysis-header">Business Impact</span>
+                        <ul>
+                            <li class="analysis-list">If we do x would expect $5K more</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End of Analysis Content -->
+            </div>
+            <!-- End of Overall Analytics Container -->
+
+            <div class="overall-funnel-column">
+                <div class="column-header">
+                    <i class="fa fa-filter" aria-hidden="true"></i>
+                    <span>Funnel</span>
+                </div>
+                <div class="funnel-container">
+                    <div id="funnel-graph" style="min-width: 410px; max-width: 600px; height: 400px; margin: 0 auto"></div>
+                </div>
+            </div>
+            <!-- End of Overall Funnel Column -->
+        </section>
+
+        <section class="fourth-section">
+            <div class="monthly-trend-column">
+                <div class="column-header">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                    <span>Impr.</span>
+                </div>
+                <div class="column-subheader">
+                    <h3>Year to date</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div class="numerical-result monthly-numerical-result">
+                            <span class="negative">91,917</span>
+                        </div>
+
+                        <div class="monthly-trend-comparison-container">
+
+                            <p>-1% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+
+                        </div>
+                        <!-- End of Numerical Result Container -->
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <!-- End of Year Container -->
+                <div class="column-subheader">
+                    <h3>Month</h3>
+                </div>
+                <div class="month-container">
+                    <div class="numerical-result monthly-numerical-result">
+                        <span class="positive">55,670</span>
+                    </div>
+                    <div class="monthly-trend-comparison-container">
+
+                        <p>12% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <!-- End of Month Container -->
+                <div class="column-subheader">
+                    <h3>Monthly 2017 Trend</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div id="monthly-trend-container-1"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End of Overall Numerical Column -->
+
+            <div class="monthly-trend-column">
+                <div class="column-header">
+                    <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+                    <span>Clicks</span>
+                </div>
+                <div class="column-subheader">
+                    <h3>Year to date</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div class="numerical-result monthly-numerical-result">
+                            <span class="negative">44,585</span>
+                        </div>
+                        <div class="monthly-trend-comparison-container">
+
+                            <p>-1% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+
+                        </div>
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <div class="column-subheader">
+                    <h3>Month</h3>
+                </div>
+                <div class="month-container">
+                    <div class="numerical-result  monthly-numerical-result">
+                        <span class="positive">7,186</span>
+                    </div>
+                    <div class="monthly-trend-comparison-container">
+
+                        <p>-26% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <!-- End of Month Container -->
+                                <div class="column-subheader">
+                    <h3>Monthly 2017 Trend</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div id="monthly-trend-container-2"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End of Numerical Result Container -->
+
+            <div class="monthly-trend-column">
+                <div class="column-header">
+                    <i class="fa fa-inbox" aria-hidden="true"></i>
+                    <span>Orders</span>
+                </div>
+                <div class="column-subheader">
+                    <h3>Year to date</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div class="numerical-result monthly-numerical-result">
+                            <span class="negative">378</span>
+                        </div>
+                        <div class="monthly-trend-comparison-container">
+
+                            <p>-1% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Comparison Container -->
+                <div class="column-subheader">
+                    <h3>Month</h3>
+                </div>
+                <div class="month-container">
+                    <div class="numerical-result monthly-numerical-result">
+                        <span class="negative">57</span>
+                    </div>
+                    <div class="monthly-trend-comparison-container">
+
+                        <p>-47% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <!-- End of Month Container -->
+                                <div class="column-subheader">
+                    <h3>Monthly 2017 Trend</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div id="monthly-trend-container-3"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End of Numerical Result Container -->
+
+            <div class="monthly-trend-column">
+                <div class="column-header">
+                    <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                    <span>CPC</span>
+                </div>
+                <div class="column-subheader">
+                    <h3>Year to date</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div class="numerical-result  monthly-numerical-result">
+                            <span class="positive">$0.49</span>
+                        </div>
+                        <div class="monthly-trend-comparison-container">
+
+                            <p>-1% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Comparison Container -->
+                <div class="column-subheader">
+                    <h3>Month</h3>
+                </div>
+                <div class="month-container">
+                    <div class="numerical-result  monthly-numerical-result">
+                        <span class="positive">$0.48</span>
+                    </div>
+                    <div class="monthly-trend-comparison-container">
+
+                        <p>14% vs 2016<i class="fa fa-caret-up positive-comparison-icon" aria-hidden="true"></i></p>
+
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <!-- End of Month Container -->
+                                <div class="column-subheader">
+                    <h3>Monthly 2017 Trend</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div id="monthly-trend-container-4"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- End of Numerical Result Container -->
+
+            <div class="monthly-trend-column last-column">
+                <div class="column-header">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                    <span>Conv.</span>
+                </div>
+
+                <div class="column-subheader">
+                    <h3>Year to date</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div class="numerical-result  monthly-numerical-result">
+                            <span class="negative">0.9%</span>
+                        </div>
+                        <div class="monthly-trend-comparison-container">
+
+                            <p>-1% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Comparison Container -->
+                <div class="column-subheader">
+                    <h3>Month</h3>
+                </div>
+                <div class="month-container">
+                    <div class="numerical-result  monthly-numerical-result">
+                        <span class="negative">0.8%</span>
+                    </div>
+                    <div class="monthly-trend-comparison-container">
+
+                        <p>-29% vs 2016<i class="fa fa-caret-down negative-comparison-icon" aria-hidden="true"></i></p>
+
+                    </div>
+                    <!-- End of Comparison Container -->
+                </div>
+                <!-- End of Month Container -->
+                <div class="column-subheader">
+                    <h3>Monthly 2017 Trend</h3>
+                </div>
+                <div class="year-container">
+                    <div class="numerical-result-container">
+                        <div id="monthly-trend-container-5"></div>
+
+                    </div>
+                </div>
+        </section>
+
+        </div>
+        <!-- End of Wrapper -->
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/funnel.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="js/scripts.js">
+        </script>
 </body>
+
 </html>
